@@ -2,6 +2,6 @@
   "posts": [
     {"id": 1, "title": "JS post", "body": "Lorem ipsum dolor sit amet."},
     {"id": 2, "title": "NextJS post", "body": "Lorem ipsum dolor sit amet, consectetur adipiscing."},
-    {"id": 2, "title": "React post", "body": "Lorem ipsum dolor sit."}
+    {"id": 3, "title": "React post", "body": "Lorem ipsum dolor sit."}
   ]
 }
