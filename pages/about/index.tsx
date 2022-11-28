@@ -1,7 +1,12 @@
 import Router from 'next/router'
+import {IAbout} from '../../interfaces/about'
 import {MainLayout} from '../../layouts/MainLayout'
 
-export default function About({ title }) {
+interface AboutPageProps {
+  title: string
+}
+
+export default function About({ title }: AboutPageProps) {
   function linkHandler() {
     return Router.push('/about/info')
   }
@@ -18,7 +23,7 @@ export default function About({ title }) {
 
 About.getInitialProps = async () => {
   const response = await fetch('http://localhost:8000/about')
-  const data = await response.json()
+  const data: IAbout = await response.json()
 
   return {
     title: data.title
